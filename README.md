@@ -23,4 +23,4 @@ Good luck and have fun!
 ## Project Pitch Video
 
 Check out [https://www.loom.com/share/45c2e901a25c497cb4d0315b8da4fae7), where I describe my
-project and some challenges I faced while building it.
+project and some challenges I faced while building it. I used index.html as well as css.

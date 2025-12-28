@@ -4,30 +4,32 @@
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  margin-bottom: 12px;
 }
 
 .card__content {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 
 .card__title {
-  height: 24px;
-  margin: 12px 0 -4px;
-  font-weight: 500;
-  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 353px;
+  margin: 0;
 }
 
 .card__like-btn {
   padding: 0;
-  margin-top: auto;
   height: 20px;
   width: 23px;
   border: none;
   background-color: transparent;
   opacity: 0.4;
   transition: opacity 0.2s ease;
+  cursor: pointer;
 }
 
 .card__like-btn:hover {
