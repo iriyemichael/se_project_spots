@@ -1,0 +1,139 @@
+/* TODO - add correct font styles to everything */
+
+.modal {
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 32px 50px;
+  position: relative;
+}
+
+/* .modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/plus.svg);
+  background-size: 22.63px 22.63px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  transform: rotate(45deg);
+  cursor: pointer;
+} */
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  mask-image: url(../images/plus.svg);
+  mask-size: 22.63px 22.63px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url(../images/plus.svg);
+  -webkit-mask-size: 22.63px 22.63px;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #212121;
+  opacity: 0.4;
+  border: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #212121;
+  opacity: 70%;
+}
+
+.modal__input {
+  display: block;
+  margin: 8px 0 0;
+  width: 100%;
+  padding: 16px 12px;
+  border-radius: 8px;
+  color: #212121;
+  opacity: 40%;
+  box-sizing: border-box;
+}
+
+.modal__input::placeholder {
+  color: #212121;
+  opacity: 30%;
+  font-size: 20px;
+}
+
+.modal__submit-btn {
+  max-width: 156px;
+  padding: 18px 32px;
+  width: 156px;
+  height: 52px;
+  gap: 8px;
+  background-color: #212121;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* TODO - remove max-width in media query */
+}
+
+@media (max-width: 767px) {
+  .modal__submit-btn {
+    max-width: none;
+    width: 100%;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+}
