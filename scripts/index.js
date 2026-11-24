@@ -18,8 +18,8 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 
 const addModalFormElement = newPostModal.querySelector(".modal__form");
 const cardImageInput = addModalFormElement.querySelector("#card-image-input");
-const profileDescriptionInput = addModalFormElement.querySelector(
-  "#profile-description-input",
+const cardDescriptionInput = addModalFormElement.querySelector(
+  "#card-description-input",
 );
 
 editProfileBtn.addEventListener("click", function () {
@@ -54,9 +54,9 @@ function handleAddCardFormSubmit(evt) {
   console.log(
     "Form submitted with values:",
     cardImageInput.value,
-    profileDescriptionInput.value,
+    cardDescriptionInput.value,
   );
-  addModalFormElement.classList.remove("modal_is-opened");
+  newPostModal.classList.remove("modal_is-opened");
 }
 
 addModalFormElement.addEventListener("submit", handleAddCardFormSubmit);
